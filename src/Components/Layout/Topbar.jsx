@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Topbar = () => {
   return (
-<div className="bg-[#ea2c2c] text-white">
+<div className="bg-rabbit text-white">
     <div className='container mx-auto flex justify-between items-center py-2 px-8 md:px-0'>
         <div className='hidden md:flex items-center space-x-4'> 
             <a href="" className='hover:text-gray-300'>
