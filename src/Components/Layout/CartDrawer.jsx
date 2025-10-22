@@ -1,0 +1,42 @@
+import React, { use } from 'react'
+import { useState } from 'react'
+import { IoMdClose } from 'react-icons/io';
+import CartContet from '../Cart/CartContet';
+
+const CartDrawer = ({drawerOpen,toggleCartDrawer}) => {
+
+
+
+
+  return (
+    <div className={`fixed top-0 right-0 w-3/4 sm:w-1/2 h-full bg-white shadow-lg transform transition-transform duration-300  flex flex-col z-50 ${drawerOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+
+
+      {/* Cart content goes here */}
+
+      <div className='flex justify-end p-4'>
+        <button onClick={toggleCartDrawer}>
+            <IoMdClose className='h-6 w-6 text-gray-600' />
+        </button>
+      </div>
+      {/* cart content with Scrollable Area */}
+    
+
+      <div className='flex-grow p-4 overflow-y-auto'>
+        <h2 className='text-2xl font-medium mb-4'>Your Cart</h2>
+        {/* ?component for cart Content */}
+
+          <CartContet />
+
+      </div>
+      {/* check out Button fixed at Bottom  */}
+
+      <div className=' p-4 bg bg-white sticky bottom-0'>
+        <button className='w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition '> Checkout</button>
+        <p className='text-sm tracking-tighter text-gray-500 margin top-2 text-center'>Shipping, Taxes, and Discount Codes Calculated at Checkout</p>
+      </div>
+    </div>
+  )
+}
+
+export default CartDrawer
