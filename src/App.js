@@ -8,9 +8,9 @@ import Header from './Components/Common/Header'
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
+    <UserLayout/>
       <Routes>
-        <Route path="/user" element={<UserLayout />} />
+        {/* <Route path="/user" element={<UserLayout />} /> */}
         <Route path="/admin" element={<AdminLayout />} />
       </Routes>
     </BrowserRouter>
