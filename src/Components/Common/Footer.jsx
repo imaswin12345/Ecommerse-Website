@@ -5,6 +5,11 @@ import { FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
+
+  const handleSubscribe = (e) => {
+    e.preventDefault(); 
+    alert("Thank you for subscribing!");
+  };
   return (
     <footer className="border-t py-12">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0">
@@ -17,7 +22,7 @@ const Footer = () => {
           <p className="font-medium text-sm text-gray-600 mb-6">
             Sign up to get 10% off on your first order
           </p>
-          <form className="flex">
+          <form onSubmit={handleSubscribe} className="flex">
             <input
               type="email"
               placeholder="Enter Your Email"
