@@ -138,7 +138,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="border-t pt-8 mt-8 text-center">
         <p className="text-gray-500 text-sm">
-          &copy; 2025 Your Company Name. All rights reserved.
+          &copy; 2025 Rabbit. All rights reserved.
         </p>
       </div>
     </footer>

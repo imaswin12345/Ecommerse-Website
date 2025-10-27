@@ -7,6 +7,8 @@ import SearchBar from '../Common/SearchBar';
 import CartDrawer from '../Layout/CartDrawer';
 import { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
+import { LuRabbit } from "react-icons/lu";
+
 
 const NavBar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -24,11 +26,12 @@ const NavBar = () => {
     <>
       <nav className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left: Logo */}
-        <div>
-          <Link to="/" className="text-2xl font-medium">
-            Rabbit
-          </Link>
-        </div>
+          <div>
+            <Link to="/" className="flex items-center text-2xl font-medium gap-2">
+              <LuRabbit className="text-3xl" />
+              Rabbit
+            </Link>
+          </div>
 
         {/* Center: Links + Search */}
         <div className="flex items-center hidden md:flex space-x-6">
