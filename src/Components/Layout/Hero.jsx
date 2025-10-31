@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
         <div className="text-center text-white p-6">
           <h1 className="text-4xl md:text-8xl font-bold tracking-tighter uppercase mb-4 leading-tight">
-            Vacation <br /> Ready <br /> Outfits
+            Vacation <br /> Ready <br /> 
           </h1>
           <p className="text-sm md:text-lg mb-6">
             Explore Our Vacation-Ready Outfits with Fast Worldwide Shipping
